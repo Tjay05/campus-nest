@@ -3,3 +3,7 @@
 
 /* Tailwindcss Import */
 @import "tailwindcss";
+
+.rule {
+  @apply w-[90%] mx-auto
+}
