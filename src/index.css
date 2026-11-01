@@ -5,5 +5,5 @@
 @import "tailwindcss";
 
 .rule {
-  @apply w-[90%] mx-auto
+  @apply w-[min(90%,1200px)] mx-auto
 }
