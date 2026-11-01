@@ -51,7 +51,7 @@ const Landingpage = () => {
         </div>
       </section>
       <section className="rule my-16">
-        <h2 className="text-center font-extrabold text-2xl font-[manrope] my-3 md:text-left md:text-4xl">Built to be trusted</h2>
+        <h2 className="text-center font-extrabold text-2xl font-[manrope] my-8 md:text-left md:text-4xl">Built to be trusted</h2>
         <div className="grid gap-8 my-6 md:my-8 md:grid-cols-4 md:gap-5">
           <article className="">
             <h3 className="font-[poppins] font-semibold mb-1 relative before:absolute before:-top-3 before:w-11 before:h-1.5 before:rounded-sm before:bg-[#F2A93B] gap-2">Verified landlords</h3>
@@ -71,9 +71,59 @@ const Landingpage = () => {
           </article>
         </div>
       </section>
+      <section id="browse" className="rule my-16">
+        <div className="md:flex md:justify-between">
+          <div className="mb-4 md:mb-0">
+            <p className="uppercase text-[#0E7C66] font-[poppins] font-bold tracking-widest text-sm md:text-lg">a few places to start</p>
+            <h2 className="font-extrabold text-2xl font-[manrope] my-3 md:text-4xl">Featured student rooms</h2>
+            <p className="font-[inter] text-[#4a524d] md:text-lg">Take a look at the kinds of spaces you can find around UniJos.</p>
+          </div>
+          <Link to="" className="border border-[#0E7C66] rounded-full inline-flex items-center justify-center gap-2 font-semibold px-5 py-2.5 text-[#0E7C66] font-[manrope] text-sm md:place-self-end md:text-base">Browse all rooms <span className="">→</span></Link>
+        </div>
+        <div className="grid gap-5 my-6 md:my-8 sm:grid-cols-2 md:grid-cols-3 md:gap-6">
+          <Link className="bg-white border border-[#e9e3d8] rounded-2xl overflow-hidden flex flex-col hover:-translate-y-0.5">
+            <div className="relative aspect-4/3 bg-[#f4eee3]"><img alt="Self-contain room with tiled floor" className="w-full h-full object-cover" /><span className="absolute top-3 left-3 inline-flex items-center gap-1 py-0.75 px-2.5 rounded-full text-xs font-semibold font-[manrope] bg-[#e2f2e9] text-[#0E7C66]">Tina</span></div>
+            <div className="p-4 flex flex-col gap-1.5 flex-1">
+              <p className="font-bold font-[poppins]">Self-contain with tiled floor</p>
+              <div className="text-[#868e89] text-sm font-[manrope] flex flex-wrap gap-y-1 gap-x-3">
+                <span>1.2 km to campus</span><span>·</span><span>Self-contain</span>
+              </div>
+              <div className="mt-auto pt-2.5 flex items-end justify-between gap-2">
+                <p className="font-semibold text-lg font-[poppins]">₦250,000 <small className="font-light">/year</small></p>
+                <span className="text-[#17603f] text-sm font-semibold font-[manrope]">Available now</span>
+              </div>
+            </div>
+          </Link>
+          <Link className="bg-white border border-[#e9e3d8] rounded-2xl overflow-hidden flex flex-col hover:-translate-y-0.5">
+            <div className="relative aspect-4/3 bg-[#f4eee3]"><img alt="Single room with shared kitchen" className="w-full h-full object-cover" /><span className="absolute top-3 left-3 inline-flex items-center gap-1 py-0.75 px-2.5 rounded-full text-xs font-semibold font-[manrope] bg-[#e2f2e9] text-[#0E7C66]">Angwan Rukuba</span></div>
+            <div className="p-4 flex flex-col gap-1.5 flex-1">
+              <p className="font-bold font-[poppins]">Single room, shared kitchen</p>
+              <div className="text-[#868e89] text-sm font-[manrope] flex flex-wrap gap-y-1 gap-x-3">
+                <span>0.8 km to campus</span><span>·</span><span>Single room</span>
+              </div>
+              <div className="mt-auto pt-2.5 flex items-end justify-between gap-2">
+                <p className="font-semibold text-lg font-[poppins]">₦140,000 <small className="font-light">/year</small></p>
+                <span className="text-[#17603f] text-sm font-semibold font-[manrope]">Available now</span>
+              </div>
+            </div>
+          </Link>
+          <Link className="bg-white border border-[#e9e3d8] rounded-2xl overflow-hidden flex flex-col hover:-translate-y-0.5">
+            <div className="relative aspect-4/3 bg-[#f4eee3]"><img alt="Two bedroom flat with parking" className="w-full h-full object-cover" /><span className="absolute top-3 left-3 inline-flex items-center gap-1 py-0.75 px-2.5 rounded-full text-xs font-semibold font-[manrope] bg-[#e2f2e9] text-[#0E7C66]">Gada Biu</span></div>
+            <div className="p-4 flex flex-col gap-1.5 flex-1">
+              <p className="font-bold font-[poppins]">2 bedroom flat, parking space</p>
+              <div className="text-[#868e89] text-sm font-[manrope] flex flex-wrap gap-y-1 gap-x-3">
+                <span>3.6 km to campus</span><span>·</span><span>2 bedroom</span>
+              </div>
+              <div className="mt-auto pt-2.5 flex items-end justify-between gap-2">
+                <p className="font-semibold text-lg font-[poppins]">₦420,000 <small className="font-light">/year</small></p>
+                <span className="text-[#17603f] text-sm font-semibold font-[manrope]">Available now</span>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
     </>
   );
 }
  
 export default Landingpage;
-// flex items-center before:content-[''] before:w-2 before:h-2 before:rounded-full before:bg-[#F2A93B] gap-2 text-[#d2e9db] font-semibold font-[poppins] text-sm
