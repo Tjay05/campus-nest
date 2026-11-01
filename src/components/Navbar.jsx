@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="bg-[#fbf7f0e6] top-0 z-10 sticky border-b-[#e9e3d8] backdrop-saturate-[1.4] backdrop-blur-md">
+      <header className="bg-[#fbf7f0e6] top-0 z-10 sticky border-b-[#e9e3d8] border-b backdrop-saturate-[1.4] backdrop-blur-md">
         <nav className="rule py-4 flex justify-between items-center">
           <div className="logo flex items-center gap-x-2">
             <img className="w-7.5" src={Logo} alt="Logo" />
@@ -21,7 +21,7 @@ const Navbar = () => {
             <span className="border-t-3 border-[#0E7C66] rounded-t-xl w-6"></span>
             <span className="border-t-3 border-[#0E7C66] rounded-t-xl w-6"></span>
           </div>
-          <div className={`${isNavOpen ? "flex" : "hidden"} absolute z-9 bg-[#fbf7f0e6] flex-col justify-center text-center w-full top-15 left-0 py-6 md:flex md:p-0 md:w-auto md:justify-between items-center md:static md:flex-row lg:gap-x-20 xl:gap-x-60`}>
+          <div className={`${isNavOpen ? "flex" : "hidden"} absolute z-9 bg-[#fbf7f0e6] flex-col justify-center text-center w-full top-15 left-0 py-6 md:bg-transparent md:flex md:p-0 md:w-auto md:justify-between items-center md:static md:flex-row lg:gap-x-20 xl:gap-x-60`}>
           <ul className="font-[manrope] text-[#868e89] font-semibold text-base lg:text-lg flex flex-col gap-y-4 md:flex-row md:gap-x-3 lg:gap-x-8">
             <li className="">
               <a href="#browse" className="">Find a Home</a>
