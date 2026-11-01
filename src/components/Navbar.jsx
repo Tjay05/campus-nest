@@ -27,10 +27,10 @@ const Navbar = () => {
               <a href="#browse" className="">Find a Home</a>
             </li>
             <li className="">
-              <a href="#howitworks" className="">List Property</a>
+              <a href="#landlord" className="">List Property</a>
             </li>
             <li className="">
-              <a href="#landlords" className="">How It Works</a>
+              <a href="#howitworks" className="">How It Works</a>
             </li>
           </ul>
           <ul className="flex flex-col mt-12 gap-y-6 md:flex-row md:m-0 lg:gap-x-4 lg:text-lg">
