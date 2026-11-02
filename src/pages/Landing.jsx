@@ -122,6 +122,14 @@ const Landingpage = () => {
           </Link>
         </div>
       </section>
+      <section id="landlord" className="cta rule my-16 bg-white rounded-3xl p-8 border border-[#e9e3d8] md:flex md:items-center md:justify-between">
+        <div className="">
+          <p className="uppercase text-[#0E7C66] font-[poppins] font-bold tracking-widest text-sm md:text-lg">for landlords</p>
+          <h2 className="font-extrabold text-2xl font-[manrope] my-3 md:text-4xl">Have a room for students?</h2>
+          <p className="font-[inter] text-[#4a524d] md:w-3/4">Put your apartment in front of students looking around Jos. Share the details, answer questions directly, and manage your listing from one place.</p>
+        </div>
+        <Link to="" className="rounded-full bg-[#0E7C66] text-white font-[manrope] inline-flex gap-2 mt-4 items-center p-4 md:flex md:gap-0 md:px-5 md:mt-0 md:w-1/4 md:justify-between font-semibold text-sm md:text-base">Post your apartment<span className="">→</span></Link>
+      </section>
     </>
   );
 }
