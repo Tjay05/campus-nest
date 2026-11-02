@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Logo from "../assets/icons/logo.png";
 import { useState } from "react";
+import Footer from "./Footer";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
         <nav className="rule py-4 flex justify-between items-center">
           <div className="logo flex items-center gap-x-2">
             <img className="w-7.5" src={Logo} alt="Logo" />
-            <p className="text-xl lg:text-2xl font-[poppins] font-extrabold text-[#0E7C66]">Campus <span className="text-[#F2A93B]">Nest</span></p>
+            <p className="text-xl lg:text-2xl font-[poppins] font-extrabold text-[#0E7C66]">Campus<span className="text-[#F2A93B]">Nest</span></p>
           </div>
           {/* Hamburger Icon */}
           <div onClick={toggleNav} className="flex flex-col gap-y-1 justify-center items-center border-3 px-1 py-1.5 rounded-lg border-[#0E7C66] md:hidden">
@@ -43,6 +44,7 @@ const Navbar = () => {
       <main className="">
         <Outlet/>
       </main>
+      <Footer/>
     </>
   );
 }
