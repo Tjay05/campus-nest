@@ -49,14 +49,29 @@ const Auth = () => {
 
         <form className="nne active:block">
           <div className="flex flex-col gap-1.25 mb-2.75 text-[11px] text-[#434c46] font-[manrope]">
-            <label htmlFor="" className="text-xs font-semibold">Email address</label>
-            <input type="email" placeholder="campusnest@yahoo.com" className="w-full h-11 rounded-xl text-xs py-0 px-3.5 border border-[#e9e3d8] bg-white outline-none " />
+            <label htmlFor="signin-email" className="text-xs font-semibold">Email address</label>
+            <input id="signin-email" type="email" placeholder="campusnest@yahoo.com" required className="w-full h-11 rounded-xl text-xs py-0 px-3.5 border border-[#e9e3d8] bg-white outline-none " />
           </div>
           <div className="flex flex-col gap-1.25 mb-2.75 text-[11px] text-[#434c46] font-[manrope]">
-            <label htmlFor="" className="text-xs font-semibold">Password</label>
-            <input type="password" className="w-full h-11 rounded-xl text-xs py-0 px-3.5 border border-[#e9e3d8] bg-white outline-none " />
+            <div className="flex items-center justify-between">
+              <label htmlFor="signin-password" className="text-xs font-semibold">Password</label>
+              <a className="text-[10px] font-bold text-[#17603f]">Forgot password?</a>
+            </div>
+            <div className="relative">
+              <input id="signin-password" type="password" placeholder="Enter your password" required className="w-full h-11 rounded-xl text-xs py-0 px-3.5 border border-[#e9e3d8] bg-white outline-none " />
+              <button className="absolute right-2.75 top-[20%] text-[#8b948e] p-0.75 bg-transparent grid place-items-center"><svg className="w-4.5 h-4.5 fill-none stroke-current stroke-[1.6]" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button>
+              </div>
           </div>
+          <label className="flex gap-2 items-start text-[#868e89] text-[10px] mt-0.5 mx-0 mb-3.5 font-[manrope]"><input type="checkbox" name="" className="mt-px mx-0 mb-0 w-3 h-3 accent-[#1f7a4d] flex-none"/><span className="">Keep me signed in</span></label>
+          <button className="h-12 justify-between py-0 pl-5 pr-4.25 rounded-xl text-xs bg-[#1f7a4d] text-white w-full inline-flex items-center gap-2 border border-transparent; font-semibold whitespace-nowrap font-[manrope]">
+            <span className="">Welcome back</span>
+            <span className="w-6.75 h-6.75 grid place-items-center rounded-lg text-[#0d3324] bg-[#f2a541]">→</span>
+          </button>
+
+          <p className=""></p>
         </form>
+
+        
       </div>
     </section>
   );
