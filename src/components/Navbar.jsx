@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Logo from "../assets/icons/logo.png";
 import { useState } from "react";
 import Footer from "./Footer";
@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="flex flex-col mt-12 gap-y-6 md:flex-row md:m-0 lg:gap-x-4 lg:text-lg">
-            <li><a href="auth" className="rounded-3xl border-2 px-3 py-1.5 text-[#fbf7f0e6] border-[#F2A93B] bg-[#F2A93B] font-semibold">Sign In</a></li>
+            <li><Link to="auth" className="rounded-3xl border-2 px-3 py-1.5 text-[#fbf7f0e6] border-[#F2A93B] bg-[#F2A93B] font-semibold">Sign In</Link></li>
             <li><a href="" className="rounded-3xl border-2 px-3 py-1.5  text-[#fbf7f0e6] border-[#0E7C66] bg-[#0E7C66] font-semibold">Register</a></li>
           </ul>
           </div>
