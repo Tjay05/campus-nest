@@ -14,7 +14,7 @@ const Navbar = () => {
         <nav className="rule py-4 flex justify-between items-center">
           <div className="logo flex items-center gap-x-2">
             <img className="w-7.5" src={Logo} alt="Logo" />
-            <p className="text-xl lg:text-2xl font-[poppins] font-extrabold text-[#0E7C66]">Campus<span className="text-[#F2A93B]">Nest</span></p>
+            <Link to="/" className="text-xl lg:text-2xl font-[poppins] font-extrabold text-[#0E7C66]">Campus<span className="text-[#F2A93B]">Nest</span></Link>
           </div>
           {/* Hamburger Icon */}
           <div onClick={toggleNav} className="flex flex-col gap-y-1 justify-center items-center border-3 px-1 py-1.5 rounded-lg border-[#0E7C66] md:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
           </ul>
           <ul className="flex flex-col mt-12 gap-y-6 md:flex-row md:m-0 lg:gap-x-4 lg:text-lg">
-            <li><Link to="auth" className="rounded-3xl border-2 px-3 py-1.5 text-[#fbf7f0e6] border-[#F2A93B] bg-[#F2A93B] font-semibold">Sign In</Link></li>
+            <li><Link to="auth" onClick={toggleNav} className="rounded-3xl border-2 px-3 py-1.5 text-[#fbf7f0e6] border-[#F2A93B] bg-[#F2A93B] font-semibold">Sign In</Link></li>
             <li><a href="" className="rounded-3xl border-2 px-3 py-1.5  text-[#fbf7f0e6] border-[#0E7C66] bg-[#0E7C66] font-semibold">Register</a></li>
           </ul>
           </div>
