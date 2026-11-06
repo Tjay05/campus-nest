@@ -5,9 +5,11 @@ import SignupForm from "../components/SignupForm";
 import SigninForm from "../components/SigninForm";
 import useTimedFlag from "../hooks/useTimedFlag";
 import { PANEL_COPY } from "../data/copy";
+import { useSearchParams } from "react-router-dom";
 
 const Auth = () => {
-  const [tab, setTab] = useState("signup");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const tab = searchParams.get("tab") === "signin" ? "signin" : "signup";
   const [role, setRole] = useState("student");
 
   const [isLeaving, glide] = useTimedFlag(170);
@@ -16,7 +18,7 @@ const Auth = () => {
 
   const switchTab = (next) => {
     if (next === tab) return;
-    setTab(next);
+    setSearchParams({ tab: next }, { replace: true });
     glide();
     animatePanel();
     animateForm();
