@@ -2,7 +2,7 @@ import Field from "./Field";
 import PasswordInput from "./PasswordInput";
 import RoleSelector from "./RoleSelector";
 import SubmitButton from "./SubmitButton";
-import { checkboxRow, checkboxInput, textLink } from "../assets/styles/styles";
+import { checkboxRow, checkboxInput, textLink } from "../../assets/styles/styles";
 
 const SignupForm = ({ role, onRoleSelect, isChanging, onSubmit }) => (
   <form onSubmit={onSubmit} className={isChanging ? "active-form" : ""}>

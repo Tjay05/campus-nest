@@ -1,4 +1,4 @@
-import { StudentIcon, LandlordIcon } from "../assets/icons/icons";
+import { StudentIcon, LandlordIcon } from "../../assets/icons/icons";
 
 const ROLES = [
   { id: "student", title: "Student", hint: "Find a room near campus", Icon: StudentIcon, iconStyle: "bg-[#e2f2e9] text-[#17603f]" },

@@ -1,7 +1,7 @@
 import Field from "./Field";
 import PasswordInput from "./PasswordInput";
 import SubmitButton from "./SubmitButton";
-import { checkboxRow, checkboxInput } from "../assets/styles/styles";
+import { checkboxRow, checkboxInput } from "../../assets/styles/styles";
 
 const ForgotLink = (
   <a className="text-[10px] font-bold text-[#17603f] lg:text-xs">Forgot password?</a>

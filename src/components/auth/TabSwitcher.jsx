@@ -1,4 +1,4 @@
-import { TABS } from "../data/copy";
+import { TABS } from "../../data/copy";
 
 const TabSwitcher = ({ tab, onChange }) => (
   <div className="relative grid grid-cols-2 isolate bg-[#f3f3ef] p-1 rounded-xl mx-0 mt-6 mb-5">

@@ -1,4 +1,4 @@
-import { fieldWrapper, inputClass } from "../assets/styles/styles";
+import { fieldWrapper, inputClass } from "../../assets/styles/styles";
 
 // Label + input. Pass `children` to replace the default <input> (e.g. PasswordInput),
 // and `labelExtra` for something on the right of the label (e.g. "Forgot password?").

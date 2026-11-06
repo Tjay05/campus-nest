@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Field from "./Field";
-import { EyeIcon } from "../assets/icons/icons";
-import { inputClass } from "../assets/styles/styles";
+import { EyeIcon } from "../../assets/icons/icons";
+import { inputClass } from "../../assets/styles/styles";
 
 // Owns its own show/hide state, so each form no longer shares one flag.
 const PasswordInput = ({ id, label = "Password", placeholder, labelExtra }) => {

@@ -1,5 +1,5 @@
-import MountImg from "../assets/images/mountain.jpg"; // adjust if your folder differs
-import { getHeroCopy } from "../data/copy";
+import MountImg from "../../assets/images/mountain.jpg"; // adjust if your folder differs
+import { getHeroCopy } from "../../data/copy";
 
 const AVATARS = [
   { letter: "J", bg: "bg-[#f6d8a9]" },
