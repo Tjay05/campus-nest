@@ -4,7 +4,7 @@ import { EyeIcon } from "../../assets/icons/icons";
 import { inputClass } from "../../assets/styles/styles";
 
 // Owns its own show/hide state, so each form no longer shares one flag.
-const PasswordInput = ({ id, label = "Password", placeholder, labelExtra }) => {
+const PasswordInput = ({ id, name, label = "Password", placeholder, labelExtra }) => {
   const [visible, setVisible] = useState(false);
 
   return (
@@ -12,6 +12,7 @@ const PasswordInput = ({ id, label = "Password", placeholder, labelExtra }) => {
       <div className="relative">
         <input
           id={id}
+          name={name}
           type={visible ? "text" : "password"}
           placeholder={placeholder}
           required
