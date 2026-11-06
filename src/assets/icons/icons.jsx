@@ -23,3 +23,9 @@ export const EyeIcon = () => (
     <circle cx="12" cy="12" r="3" />
   </svg>
 );
+
+export const VerifyMailIcon = () => (
+  <svg className="w-8.75 h-8.75 fill-none stroke-current stroke-[1.8]" viewBox="0 0 48 48"><rect x="6" y="11" width="36" height="26" rx="6"/>
+    <path d="m8 15 16 12 16-12"/><path d="m17 25 5 5 10-11"/>
+  </svg>
+);
