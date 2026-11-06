@@ -5,12 +5,15 @@ import SignupForm from "../components/auth/SignupForm";
 import SigninForm from "../components/auth/SigninForm";
 import useTimedFlag from "../hooks/useTimedFlag";
 import { PANEL_COPY } from "../data/copy";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 
 const Auth = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const tab = searchParams.get("tab") === "signin" ? "signin" : "signup";
   const [role, setRole] = useState("student");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const [isLeaving, glide] = useTimedFlag(170);
   const [isTransitioning, animatePanel] = useTimedFlag(500);
@@ -31,6 +34,18 @@ const Auth = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const { fullname, email, password } = Object.fromEntries(new FormData(e.currentTarget));
+    setError("");
+    setIsSubmitting(true);
+    try {
+      console.log(fullname, email, password);
+      navigate("/auth/verify-email", { state: { email }, replace: true });
+    } catch (err) {
+      setError(err.message || "Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const panel = PANEL_COPY[tab];
@@ -50,7 +65,7 @@ const Auth = () => {
         <TabSwitcher tab={tab} onChange={switchTab} />
 
         {isSignup ? (
-          <SignupForm role={role} onRoleSelect={selectRole} isChanging={isFormChanging} onSubmit={handleSubmit} />
+          <SignupForm role={role} onRoleSelect={selectRole} isChanging={isFormChanging} onSubmit={handleSubmit} isSubmitting={isSubmitting} error={error} />
         ) : (
           <SigninForm isChanging={isFormChanging} onSubmit={handleSubmit} />
         )}
