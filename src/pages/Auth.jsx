@@ -1,8 +1,8 @@
 import { useState } from "react";
-import AuthHero from "../components/AuthHero";
-import TabSwitcher from "../components/TabSwitcher";
-import SignupForm from "../components/SignupForm";
-import SigninForm from "../components/SigninForm";
+import AuthHero from "../components/auth/AuthHero";
+import TabSwitcher from "../components/auth/TabSwitcher";
+import SignupForm from "../components/auth/SignupForm";
+import SigninForm from "../components/auth/SigninForm";
 import useTimedFlag from "../hooks/useTimedFlag";
 import { PANEL_COPY } from "../data/copy";
 import { useSearchParams } from "react-router-dom";
